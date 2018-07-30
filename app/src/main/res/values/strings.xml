@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Campus</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="demand">请您在此处写下您要约的详细信息...(时间，地点，性别要求等等，期待为您约到最佳人选)</string>
+    <string name="action_settings">Settings</string>
+</resources>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.heavn.student.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:gravity="center"
+        android:id="@+id/linearLayout3"
+        android:layout_marginTop="30dp">
+        <Button
+            android:id="@+id/zhizhetongxing"
+            android:textSize="20sp"
+            android:background="@color/lightBlue"
+            android:layout_width="150dp"
+            android:layout_height="120dp"
+            android:text="志者同行"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="20dp" />
+
+        <Button
+            android:id="@+id/shetuan"
+            android:layout_width="150dp"
+            android:layout_height="120dp"
+            android:background="@color/lightBlue"
+            android:text="社团或学生组织"
+            android:textSize="20sp"
+            android:layout_marginEnd="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:gravity="center"
+        android:id="@+id/linearLayout4"
+        android:layout_below="@+id/linearLayout3"
+        android:layout_alignParentStart="true">
+        <Button
+            android:textSize="20sp"
+            android:background="@color/lightBlue"
+            android:layout_height="120dp"
+            android:text="心里话"
+            android:layout_width="150dp"
+            android:id="@+id/xinli"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="20dp" />
+        <Button
+            android:textSize="20sp"
+            android:background="@color/lightBlue"
+            android:layout_height="120dp"
+            android:layout_width="150dp"
+            android:id="@+id/shiwu"
+            android:text="失物招领"
+            android:layout_marginEnd="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="150dp"-->
+        <!--android:layout_below="@+id/linearLayout4"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:gravity="center">-->
+
+        <!--<Button-->
+            <!--android:textSize="20sp"-->
+            <!--android:background="@color/lightBlue"-->
+            <!--android:id="@+id/zhizhejiehuo"-->
+            <!--android:layout_width="150dp"-->
+            <!--android:layout_height="120dp"-->
+            <!--android:text="智者解惑"-->
+            <!--android:layout_alignParentTop="true"-->
+            <!--android:layout_alignParentStart="true"-->
+            <!--android:layout_marginStart="20dp" />-->
+
+        <!--<Button-->
+            <!--android:textSize="20sp"-->
+            <!--android:background="@color/lightBlue"-->
+            <!--android:layout_width="150dp"-->
+            <!--android:layout_height="120dp"-->
+            <!--android:id="@+id/ziliao"-->
+            <!--android:text="资料分享"-->
+            <!--android:layout_marginEnd="20dp"-->
+            <!--android:layout_alignParentTop="true"-->
+            <!--android:layout_alignParentEnd="true" />-->
+    <!--</RelativeLayout>-->
+
+</RelativeLayout>

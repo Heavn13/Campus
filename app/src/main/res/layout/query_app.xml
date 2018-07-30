@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:id="@+id/liear_query"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/app_linear_all"
+        android:orientation="horizontal"
+        android:background="@color/lightBlue"
+        android:padding="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="查约"
+            android:gravity="center"
+            android:textSize="24dp"
+            android:textColor="#ff0804"/>
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/app_type"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:textAlignment="center"
+            android:id="@+id/query_app_type"
+            ></Spinner>
+    </LinearLayout>
+
+    <yue.MyListview
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/white"
+        android:dividerHeight="5dp"
+        android:id="@+id/query_list"
+        android:layout_margin="10dp"></yue.MyListview>
+</LinearLayout>

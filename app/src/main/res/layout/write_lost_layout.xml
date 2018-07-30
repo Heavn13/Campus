@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightBlue">
+
+    <RelativeLayout
+        android:id="@+id/bar"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <Button
+            android:id="@+id/bar_cancel"
+            android:text="取消"
+            android:textSize="15sp"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:background="@color/lightBlue"/>
+
+        <TextView
+            android:id="@+id/bar_title"
+            android:text="失物招领"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:id="@+id/bar_report"
+            android:text="发表"
+            android:textSize="15sp"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:background="@color/lightBlue"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/lost_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:text="丢失物品名称："
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:id="@+id/textView5"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="21dp"
+            android:layout_marginStart="21dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:id="@+id/edit_things_name"
+            android:hint="丢了啥东西嘞"
+            android:background="@color/gray"
+            android:gravity="center_vertical"
+            android:textSize="12sp"
+            android:paddingLeft="5dp"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_alignTop="@+id/textView5"
+            android:layout_toRightOf="@+id/textView5"
+            android:layout_toEndOf="@+id/textView5" />
+
+        <TextView
+            android:text="丢失物品描述："
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:id="@+id/textView9"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/textView5"
+            android:layout_marginLeft="21dp"
+            android:layout_marginStart="21dp"
+             />
+
+        <EditText
+            android:id="@+id/edit_content"
+            android:hint="东西长啥样嘞"
+            android:background="@color/gray"
+            android:gravity="center_vertical"
+            android:textSize="12sp"
+            android:paddingLeft="5dp"
+            android:lines="3"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_alignTop="@+id/textView9"
+            android:layout_toRightOf="@+id/textView9"
+            android:layout_toEndOf="@+id/textView9" />
+
+        <ImageView
+            android:id="@+id/image_photo1"
+            android:background="@drawable/photo"
+            android:scaleType="centerCrop"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/edit_content"
+            android:layout_alignTop="@+id/image_photo2"
+            android:layout_alignParentStart="true" />
+
+        <ImageView
+            android:id="@+id/image_photo2"
+            android:background="@drawable/photo"
+            android:scaleType="centerCrop"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/edit_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="110dp"
+            android:layout_marginLeft="130dp" />
+
+        <ImageView
+            android:id="@+id/image_photo3"
+            android:background="@drawable/photo"
+            android:scaleType="centerCrop"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/edit_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="250dp" />
+
+        <TextView
+            android:text="丢失时间："
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:id="@+id/textView6"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/image_photo1"
+            android:layout_alignLeft="@+id/textView5"
+            android:layout_alignStart="@+id/textView5" />
+
+        <EditText
+            android:id="@+id/edit_lost_date"
+            android:hint="啥时候丢的嘞"
+            android:paddingLeft="5dp"
+            android:background="@color/gray"
+            android:gravity="center_vertical"
+            android:textSize="12sp"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_alignTop="@+id/textView6"
+            android:layout_alignLeft="@+id/edit_things_name"
+            android:layout_alignStart="@+id/edit_things_name" />
+
+        <TextView
+            android:text="丢失地点："
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:id="@+id/textView7"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/textView6"
+            android:layout_alignLeft="@+id/textView6"
+            android:layout_alignStart="@+id/textView6" />
+
+        <EditText
+            android:id="@+id/edit_lost_location"
+            android:hint="在哪丢的嘞"
+            android:background="@color/gray"
+            android:gravity="center_vertical"
+            android:paddingLeft="5dp"
+            android:textSize="12sp"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_alignTop="@+id/textView7"
+            android:layout_alignLeft="@+id/edit_lost_date"
+            android:layout_alignStart="@+id/edit_lost_date" />
+
+        <TextView
+            android:text="联系方式："
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:id="@+id/textView8"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/edit_lost_location"
+            android:layout_alignLeft="@+id/textView6"
+            android:layout_alignStart="@+id/textView6" />
+
+        <EditText
+            android:id="@+id/edit_contact"
+            android:hint="找到了该怎么联系嘞(电话号码)"
+            android:background="@color/gray"
+            android:gravity="center_vertical"
+            android:paddingLeft="5dp"
+            android:textSize="12sp"
+            android:inputType="phone"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_alignTop="@+id/textView8"
+            android:layout_alignLeft="@+id/edit_lost_location"
+            android:layout_alignStart="@+id/edit_lost_location" />
+
+        <TextView
+            android:text="所在校区："
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:layout_below="@+id/textView8"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="40dp"
+            android:layout_alignLeft="@+id/textView6"
+            android:layout_alignStart="@+id/textView6"
+            android:id="@+id/textView" />
+
+        <Spinner
+            android:id="@+id/spinner1"
+            android:background="@color/gray"
+            android:gravity="center_horizontal"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:entries="@array/campus1"
+            android:layout_alignTop="@+id/textView"
+            android:layout_alignLeft="@+id/edit_contact"
+            android:layout_alignStart="@+id/edit_contact" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

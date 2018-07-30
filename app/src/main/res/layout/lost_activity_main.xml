@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/lightBlue"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="8dp">
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/back"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentTop="true"
+            />
+
+        <ImageButton
+            android:id="@+id/add"
+            android:background="@drawable/add"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignBottom="@+id/title"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp" />
+
+        <TextView
+            android:id="@+id/title"
+            android:text="失物招领"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:layout_width="100dp"
+            android:layout_height="25dp"
+            android:layout_alignBottom="@+id/back"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="700dp"
+        android:layout_below="@id/relativeLayout1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@color/lightBlue"
+                android:id="@+id/relativeLayout2"
+                tools:layout_editor_absoluteY="50dp"
+                tools:layout_editor_absoluteX="8dp"
+                android:layout_below="@+id/relativeLayout1"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+                <ImageButton
+                    android:id="@+id/head"
+                    android:background="@drawable/head"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp" />
+
+                <TextView
+                    android:id="@+id/lost_nickname"
+                    android:text="nickname"
+                    android:gravity="center_vertical"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_alignBottom="@+id/head"
+                    android:layout_toEndOf="@+id/head" />
+
+                <Spinner
+                    android:id="@+id/spinner"
+                    android:background="@color/lightBlue"
+                    android:gravity="center_horizontal"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginRight="20dp"
+                    android:entries="@array/campus"
+                    android:layout_alignBottom="@+id/head"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+
+            </RelativeLayout>
+
+            <FrameLayout
+                android:id="@+id/framelayout"
+                android:layout_below="@id/relativeLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></FrameLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+</RelativeLayout>

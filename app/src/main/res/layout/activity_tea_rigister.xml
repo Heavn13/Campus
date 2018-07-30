@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightBlue"
+    android:padding="10dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:background="@color/gray"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteY="16dp"
+        tools:layout_editor_absoluteX="10dp">
+
+        <EditText
+            android:id="@+id/rigis_username"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:layout_marginTop="30dip"
+            android:hint="账号"
+            android:paddingTop="10dip"
+            android:textSize="18dip"
+            >
+
+        </EditText>
+        <EditText
+            android:id="@+id/rigis_password"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:layout_marginTop="10dip"
+            android:password="true"
+            android:paddingTop="10dip"
+            android:textSize="18dip"
+            android:hint="密码"
+            >
+
+        </EditText>
+
+
+        <EditText
+            android:id="@+id/rigis_nickname"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:layout_marginTop="10dip"
+            android:paddingTop="10dip"
+            android:textSize="18dip"
+            android:hint="昵称"
+            >
+
+        </EditText>
+        <EditText
+            android:id="@+id/rigis_phonenum"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:layout_marginTop="10dip"
+            android:paddingTop="10dip"
+            android:textSize="18dip"
+            android:hint="手机号"
+            >
+
+        </EditText>
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:layout_marginTop="10dip">
+            <TableRow>
+                <TextView
+                    android:id="@+id/campus"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dip"
+                    android:layout_marginLeft="20dip"
+                    android:layout_marginRight="20dip"
+                    android:textSize="18dip"
+                    android:hint="校区"
+                    />
+                <Spinner
+                    android:id="@+id/spin"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dip">
+
+                </Spinner>
+            </TableRow>
+        </TableLayout>
+
+
+
+
+
+
+        <EditText
+            android:id="@+id/rigis_xueyua"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:layout_marginTop="10dip"
+            android:paddingTop="10dip"
+            android:textSize="18dip"
+            android:hint="学院"
+            >
+
+        </EditText>
+        <EditText
+            android:id="@+id/rigis_major"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:layout_marginTop="10dip"
+            android:paddingTop="10dip"
+            android:textSize="18dip"
+            android:hint="专业"
+            >
+
+        </EditText>
+
+        <Button
+            android:id="@+id/makesure"
+            android:background="@color/lightBlue"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:layout_marginTop="30dip"
+            android:text="确定" />
+    </LinearLayout>
+
+
+
+</RelativeLayout>

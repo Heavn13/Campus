@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightBlue">
+    <LinearLayout
+        android:layout_width="340dp"
+        android:layout_height="550dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:background="#55FFFFFF"
+        android:orientation="vertical" >
+        <EditText
+            android:id="@+id/rigis_studentid"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:layout_marginTop="10dip"
+            android:paddingTop="10dip"
+            android:textSize="18dip"
+            android:hint="学号(用户名)"
+            >
+            </EditText>
+        <EditText
+            android:id="@+id/rigis_password"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:layout_marginTop="10dip"
+            android:password="true"
+            android:paddingTop="10dip"
+            android:textSize="18dip"
+            android:hint="密码"
+            >
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/rigis_username"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:layout_marginTop="10dip"
+            android:hint="真实姓名"
+            android:paddingTop="10dip"
+            android:textSize="18dip"
+            >
+
+        </EditText>
+        <EditText
+            android:id="@+id/rigis_nickname"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:layout_marginTop="10dip"
+            android:paddingTop="10dip"
+            android:textSize="18dip"
+            android:hint="昵称"
+            >
+
+        </EditText>
+        <EditText
+            android:id="@+id/rigis_phonenum"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:layout_marginTop="10dip"
+            android:paddingTop="10dip"
+            android:textSize="18dip"
+            android:hint="手机号"
+            >
+
+        </EditText>
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:layout_marginTop="10dip">
+            <TableRow>
+            <TextView
+                android:id="@+id/campus"
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip"
+                android:textSize="18dip"
+                android:hint="校区"
+                />
+            <Spinner
+                android:id="@+id/spin"
+                android:layout_width="match_parent"
+                android:layout_height="40dip">
+
+            </Spinner>
+            </TableRow>
+        </TableLayout>
+
+
+
+
+
+
+        <EditText
+            android:id="@+id/rigis_xueyua"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:layout_marginTop="10dip"
+            android:paddingTop="10dip"
+            android:textSize="18dip"
+            android:hint="学院"
+            >
+
+        </EditText>
+        <EditText
+            android:id="@+id/rigis_major"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:layout_marginTop="10dip"
+            android:paddingTop="10dip"
+            android:textSize="18dip"
+            android:hint="专业"
+            >
+
+        </EditText>
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:layout_marginTop="10dip">
+            <TableRow>
+                <TextView
+                    android:id="@+id/rigis_grade"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dip"
+                    android:layout_marginLeft="20dip"
+                    android:layout_marginRight="20dip"
+                    android:textSize="18dip"
+                    android:hint="年级"
+                    />
+                <Spinner
+                    android:id="@+id/spin2"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dip">
+                </Spinner>
+            </TableRow>
+        </TableLayout>
+
+        <Button
+            android:id="@+id/makesure"
+            android:background="@color/lightBlue"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:layout_marginTop="30dip"
+            android:text="确定" />
+    </LinearLayout>
+
+
+    </RelativeLayout>
+
+

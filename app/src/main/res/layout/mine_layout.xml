@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/lightBlue"
+        android:id="@+id/relativeLayout"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ImageButton
+            android:id="@+id/my_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/back"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/my_title"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:layout_width="150dp"
+            android:layout_height="25dp"
+            android:layout_alignTop="@+id/my_back"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_below="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@color/lightBlue">
+                <ImageButton
+                    android:id="@+id/my_head"
+                    android:background="@drawable/head"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="12dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginStart="12dp" />
+                <TextView
+                    android:id="@+id/my_nickname"
+                    android:text="nickname"
+                    android:gravity="center_vertical"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_alignBottom="@+id/my_head"
+                    android:layout_toEndOf="@+id/my_head" />
+            </RelativeLayout>
+
+            <!--<ListView-->
+                <!--android:id="@+id/my_list"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="123dp"-->
+                <!--android:layout_below="@+id/relativeLayout"-->
+                <!--android:layout_alignParentLeft="true"-->
+                <!--android:layout_alignParentStart="true"-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:background="@color/lightBlue"></ListView>-->
+
+            <FrameLayout
+                android:id="@+id/framelayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/my_list"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+            </FrameLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+
+</RelativeLayout>
